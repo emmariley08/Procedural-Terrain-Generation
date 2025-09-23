@@ -44,7 +44,7 @@ public class GridMesh : MonoBehaviour
     void Start()
     {
 
-        Camera.main.transform.Translate(45, 30, 0);
+        Camera.main.transform.position = new Vector3(45, 30, 0);
         //Vector2 begin = new Vector2(0, 0);
        //chunks.Add(begin);
         //create_new_mesh(0, 0);
@@ -70,7 +70,7 @@ public class GridMesh : MonoBehaviour
             //chunks.Add(new Vector2(cx + 1, cz + 1));
             create_new_mesh(cx, cz);
         }
-        print("CX: " + cx + "    CZ: " + cz);
+        //print("CX: " + cx + "    CZ: " + cz);
 
 
         // if (cam_pos.z > (max_plane_updown + .5) * plane_size * 2)
@@ -92,6 +92,7 @@ public class GridMesh : MonoBehaviour
     {
         int indexforward = max_plane_updown + 1;
         int indexright = max_plane_leftright + 1;
+        print(Camera.main.transform.position);
         // Vector3 origin = new Vector3(0.0f, 0.0f, 0.0f);
         // if (dir == 1)
         // {
@@ -104,10 +105,11 @@ public class GridMesh : MonoBehaviour
         //     max_plane_leftright++;
         // }
         // //newPosition = meshObj.transform.position;
+        //Vector3 cam_pos = Camera.main.transform.position;
         Vector3 origin = new Vector3(cx * 85.0f, 0, cz * 85.0f);
         newPosition = origin;
         generateMeshData();
-        //generateFlags();
+        generateFlags();
 
         // instantiate Game object and give it meshfilter, and meshrenderer
         Mesh mesh = new Mesh();
@@ -316,6 +318,6 @@ public class GridMesh : MonoBehaviour
             Quaternion rot = Quaternion.identity;
             Instantiate(flagPre, position, rot);
         }
-        //flagCoords.Clear;
+        flagCoords.Clear();
     }
 }
