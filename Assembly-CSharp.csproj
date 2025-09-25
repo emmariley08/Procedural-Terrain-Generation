@@ -66,6 +66,7 @@
   <ItemGroup>
     <Compile Include="Assets/Scripts/GridMesh.cs" />
     <Compile Include="Assets/Scripts/TexturedMesh.cs" />
+    <Compile Include="Assets/Scripts/TreeGen.cs" />
     <Compile Include="Assets/Scripts/example.cs" />
     <Compile Include="Assets/Scripts/CameraMotion.cs" />
     <Compile Include="Assets/Scripts/FlagGen.cs" />
