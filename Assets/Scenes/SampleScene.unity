@@ -353,6 +353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab6b22dbed3e84c47b60814e5708b1bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  num_verts: 0
   perlin1: 4
   perlin2: 0.31
   blue: {fileID: 2100000, guid: 21ffd63772795425f83f10ff09b389ca, type: 2}
@@ -361,6 +362,8 @@ MonoBehaviour:
   scale: 10
   ys: []
   newPosition: {x: 0, y: 0, z: 0}
+  treePre: {fileID: 2531554069845783039, guid: 44a8bf6d7e3d34ecbb41fd1c1af1ac0b, type: 3}
+  treeCoords: []
   flagPre: {fileID: 5454997548308819153, guid: d80c387931ddb43b29a757bee471e6ca, type: 3}
   flagCoords: []
 --- !u!4 &1872652820

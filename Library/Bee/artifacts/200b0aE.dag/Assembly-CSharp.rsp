@@ -358,6 +358,7 @@
 "Assets/Scripts/FlagGen.cs"
 "Assets/Scripts/GridMesh.cs"
 "Assets/Scripts/TexturedMesh.cs"
+"Assets/Scripts/TreeGen.cs"
 -langversion:9.0
 /deterministic
 /optimize+
